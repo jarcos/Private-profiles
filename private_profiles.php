@@ -1,15 +1,4 @@
 <?php
-/*
-* Plugin Name: Private profiles
-* Plugin URI: http://mecus.es
-* Description: Hide profiles to all users
-* Version: 1.0
-* Author: josearcos
-* Contributors: bi0xid
-* Author URI: http://josearcos.me/
-* License: GNU/GPL 2
-*/
-
 /**
  * Test if the current browser runs on a mobile device (smart phone, tablet, etc.)
  *
@@ -42,7 +31,7 @@ function hide_profiles() {
 		$usuario_miembro = $bp->displayed_user->id;
 	
 		// Comparamos los IDs de usuario. Si no coinciden, el usuario no tiene permiso para ver el perfil y debe salir de la web
-		if ( $usuario_visitante != $usuario_miembro ) {
+		if ( $usuario_visitante != $usuario_miembro && !current_user_can( 'switch_themes' ) ) {
 			// Redirigir al usuario
 			wp_redirect( home_url() );
 			exit();
