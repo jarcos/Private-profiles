@@ -42,7 +42,7 @@ function hide_profiles() {
 		$usuario_miembro = $bp->displayed_user->id;
 	
 		// Comparamos los IDs de usuario. Si no coinciden, el usuario no tiene permiso para ver el perfil y debe salir de la web
-		if ( $usuario_visitante != $usuario_miembro ) { // TODO - La condición debe ser válida sólo para no admins (ver L:21)
+		if ( $usuario_visitante != $usuario_miembro ) {
 			// Redirigir al usuario
 			wp_redirect( home_url() );
 			exit();
