@@ -3,7 +3,7 @@
 * Plugin Name: Private profiles
 * Plugin URI: https://github.com/jarcos/Private-profiles
 * Description: Hide profiles to all users
-* Version: 1.0
+* Version: 1.0.1
 * Author: josearcos
 * Contributors: bi0xid
 * Author URI: http://josearcos.me/
