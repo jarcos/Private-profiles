@@ -1,7 +1,7 @@
 <?php 
 /*
 * Plugin Name: Private profiles
-* Plugin URI: http://mecus.es
+* Plugin URI: https://github.com/jarcos/Private-profiles
 * Description: Hide profiles to all users
 * Version: 1.0
 * Author: josearcos
